@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://neoh-react.vercel.app/?storefront=envato-elements -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="stylesheet" href="kernel_files/plugins.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<title>Kernel</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="true">
+	<meta name="next-head-count" content="8">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link rel="stylesheet" href="kernel_files/style.css">
+	<link rel="stylesheet" href="kernel_files/style1.css">
+	<link rel="preload" href="1181ff20a73f2af0.css" as="style">
+	<link rel="stylesheet" href="1181ff20a73f2af0.css" data-n-g=""><noscript
+		data-n-css=""></noscript>
+	
+</head>
+
+<body >
+
+	<script>
+		const colors = ["#929AAB", "#393E46", "#EEEEEE", "#F7F7F7", "#2C2E3E"];
+
+		const numBalls = 50;
+		const balls = [];
+
+		for (let i = 0; i < numBalls; i++) {
+		let ball = document.createElement("div");
+		ball.classList.add("ball");
+		ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+		ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+		ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+		ball.style.transform = `scale(${Math.random()})`;
+		ball.style.width = `${Math.random()}em`;
+		ball.style.height = ball.style.width;
+		
+		balls.push(ball);
+		document.body.append(ball);
+		}
+
+		// Keyframes
+		balls.forEach((el, i, ra) => {
+		let to = {
+			x: Math.random() * (i % 2 === 0 ? -11 : 11),
+			y: Math.random() * 12
+		};
+
+		let anim = el.animate(
+			[
+			{ transform: "translate(0, 0)" },
+			{ transform: `translate(${to.x}rem, ${to.y}rem)` }
+			],
+			{
+			duration: (Math.random() + 1) * 7000, // random duration
+			direction: "alternate",
+			fill: "both",
+			iterations: Infinity,
+			easing: "ease-in-out"
+			}
+		);
+		});
+	</script>
+	
+	<div id="__next">
+		<div class="neoh_fn_main" data-footer-sticky="">
+			<div class="nav_overlay "></div>
+			<div class="neoh_fn_nav ">
+				<div class="trigger is-active">
+					<div class="trigger_in"><span class="text">Close</span><span class="hamb"><span
+								class="hamb_a"></span><span class="hamb_b"></span><span class="hamb_c"></span></span>
+					</div>
+				</div>
+				<div class="nav_content">
+					<div class="nav_menu">
+						<ul>
+							<li class="menu-item menu-item-has-children"><a
+									href="https://neoh-react.vercel.app/?storefront=envato-elements#">Home</a>
+								<ul class="sub-menu" style="display: none;">
+									<li><a href="https://neoh-react.vercel.app/">Home Static</a></li>
+									<li><a href="https://neoh-react.vercel.app/kenburns">Full Kenburns</a></li>
+									<li><a href="https://neoh-react.vercel.app/half-kenburns">Half Kenburns</a></li>
+									<li><a href="https://neoh-react.vercel.app/half-slider">Half Slider</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="https://neoh-react.vercel.app/about">About</a></li>
+							<li class="menu-item"><a href="https://neoh-react.vercel.app/collection">Collection</a></li>
+							<li class="menu-item"><a href="https://neoh-react.vercel.app/blog">Blog</a></li>
+							<li class="menu-item"><a href="https://neoh-react.vercel.app/contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="nav_buttons"><a href="https://opensea.io/" class="neoh_fn_button" target="_blank"><span
+								class="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="223.000000pt"
+									height="200.000000pt" viewBox="0 0 223.000000 200.000000"
+									preserveAspectRatio="xMidYMid meet" id="null" class="fn__svg replaced-svg">
+
+									<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+										stroke="none">
+										<path d="M1058 1985 c-40 -22 -48 -45 -48 -129 0 -42 -3 -76 -8 -76 -4 0 -65
+16 -136 35 -71 20 -131 34 -133 31 -2 -2 14 -40 36 -85 142 -282 206 -551 170
+-723 -13 -65 -90 -228 -153 -327 -26 -40 -45 -79 -42 -87 4 -11 34 -14 136
+-14 l130 0 0 -100 0 -100 -152 0 c-134 0 -157 2 -196 21 -56 27 -93 84 -100
+149 l-5 50 -275 0 -275 0 6 -78 c7 -85 37 -181 82 -258 44 -75 150 -174 231
+-217 140 -73 135 -72 739 -72 534 0 541 0 587 22 69 31 141 104 212 213 35 52
+84 127 110 167 37 56 62 82 116 118 37 25 82 50 99 56 31 11 31 11 31 86 0 66
+-2 74 -17 69 -10 -3 -137 -39 -283 -81 l-265 -77 -70 -68 c-92 -91 -116 -100
+-260 -100 l-115 0 0 100 0 100 74 0 c85 0 102 10 200 120 75 84 110 135 149
+218 28 58 32 77 31 147 -1 97 -23 160 -96 272 -52 81 -266 303 -326 338 l-32
+19 0 88 c0 90 -13 142 -43 166 -24 20 -79 24 -109 7z"></path>
+										<path d="M586 1558 c-18 -29 -126 -198 -240 -376 -113 -178 -206 -328 -206
+-333 0 -5 103 -9 254 -9 l254 0 52 105 c61 121 72 195 50 319 -21 118 -101
+346 -121 346 -5 0 -24 -24 -43 -52z"></path>
+									</g>
+								</svg></span><span class="text">OpenSea</span></a><a href="https://discord.com/"
+							class="neoh_fn_button" target="_blank"><span class="icon"><svg version="1.0"
+									xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="392.000000pt"
+									viewBox="0 0 512.000000 392.000000" preserveAspectRatio="xMidYMid meet" id="null"
+									class="fn__svg replaced-svg">
+
+									<g transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)"
+										stroke="none">
+										<path d="M1690 3885 c-317 -70 -559 -148 -858 -275 -49 -21 -57 -30 -126 -139
+-330 -522 -544 -1059 -641 -1610 -50 -287 -59 -412 -58 -766 1 -181 5 -355 10
+-385 l8 -54 130 -89 c325 -221 663 -391 1017 -512 73 -25 138 -43 144 -41 25
+10 274 407 274 437 0 4 -26 17 -57 29 -79 31 -335 158 -352 175 -17 17 -13 23
+41 62 l43 31 100 -43 c528 -225 1131 -298 1690 -204 257 43 491 114 766 232
+35 15 36 15 80 -20 24 -19 44 -40 44 -46 0 -14 -209 -124 -320 -168 -44 -18
+-84 -36 -89 -40 -20 -18 239 -448 270 -449 7 0 65 18 130 41 369 127 702 294
+1029 516 l130 89 7 54 c3 30 9 159 13 285 28 882 -200 1686 -702 2477 l-74
+116 -137 57 c-253 105 -583 205 -826 250 l-90 17 -17 -24 c-10 -12 -42 -74
+-71 -137 l-53 -113 -50 6 c-27 3 -93 11 -145 18 -124 16 -645 16 -775 0 -55
+-6 -122 -14 -150 -18 l-50 -5 -65 133 c-76 155 -63 148 -220 113z m204 -1649
+c131 -64 226 -189 262 -343 20 -84 14 -223 -14 -304 -115 -344 -492 -448 -737
+-204 -160 160 -199 419 -95 632 57 115 150 199 269 240 55 20 80 23 154 20 76
+-4 98 -9 161 -41z m1702 -1 c171 -84 274 -259 274 -465 0 -150 -47 -274 -142
+-375 -260 -279 -680 -133 -764 265 -44 209 47 442 216 550 82 53 151 71 253
+66 77 -3 98 -8 163 -41z"></path>
+									</g>
+								</svg></span><span class="text">Discord</span></a></div>
+				</div>
+			
+			</div>
+			<header class="neoh_fn_header">
+				<div class="container">
+					<br>
+					<div class="header_in">
+						<div class="logo"><img
+									src="kernel_files/logo.png" alt="" style="width: 150px;z-index: 20;"></div>
+						<!-- <div class="trigger">
+							<div class="trigger_in"><span class="text">Menu</span><span class="hamb"><span
+										class="hamb_a"></span><span class="hamb_b"></span><span
+										class="hamb_c"></span></span></div>
+						</div> -->
+					</div>
+				</div>
+			</header>
+			<div class="neoh_fn_content">
+				<div class="neoh_fn_hero">
+					<div class="bg_overlay ball">
+						<div class="bg_color"></div>
+						<div class="bg_image" data-bg-img="kernel_files/ui1.jpg"
+							style="background-image: url(&quot;kernel_files/ui1.jpg&quot;);"></div>
+					</div>
+					<div class="hero_content">
+						<div class="container">
+							<div class="content">
+								<!-- <img src="kernel/layer.png" alt="logo"/> -->
+								<img src="kernel_files/layer.png" alt="Girl in a jacket" width="800px">
+								<br><br>
+								<!-- <h2 class="fn_title" title="Neoh">Kernel'23</h2> -->
+								<p class="fn_desc fn_animated_text ready stop"><span
+										style="animation-delay: 0s;">A</span><span style="animation-delay: 0.04s;"> </span>
+										<span style="animation-delay: 0.08s;">N</span><span
+										style="animation-delay: 0.1s;">a</span><span
+										style="animation-delay: 0.12s;">t</span><span
+										style="animation-delay: 0.14s;">i</span><span
+										style="animation-delay: 0.16s;">o</span><span
+										style="animation-delay: 0.18s;">n</span><span
+										style="animation-delay: 0.20s;">a</span><span
+										style="animation-delay: 0.22s;">l</span><span style="animation-delay: 0.24s;"> </span>
+										<span style="animation-delay: 0.26s;">L</span><span
+										style="animation-delay: 0.28s;">e</span><span
+										style="animation-delay: 0.30s;">v</span><span
+										style="animation-delay: 0.32s;">e</span><span
+										style="animation-delay: 0.34s;">l</span>
+										<span style="animation-delay: 0.36s;"> </span>
+										<span style="animation-delay: 0.40s;">T</span><span
+										style="animation-delay: 0.42s;">e</span><span
+										style="animation-delay: 0.44s;">ch</span><span
+										style="animation-delay: 0.5s;">n</span><span
+										style="animation-delay: 0.52s;">i</span><span
+										style="animation-delay: 0.54s;">c</span><span
+										style="animation-delay: 0.56s;">a</span><span style="animation-delay: 0.6s;">l</span><span
+										style="animation-delay: 0.62s;"> </span><span
+										style="animation-delay: 0.64s;">S</span><span
+										style="animation-delay: 0.66s;">y</span><span
+										style="animation-delay: 0.68s;">m</span><span
+										style="animation-delay: 0.70s;">p</span><span
+										style="animation-delay: 0.72s;">o</span><span
+										style="animation-delay: 0.74s;">s</span><span
+										style="animation-delay: 0.76s;">ium</span>
+										</p>
+							</div>
+
+							<br><br><br>
+							<div align="center">
+								<button class="cybr-btn">
+									REGISTER NOW !<span aria-hidden>_</span>
+									<span aria-hidden class="cybr-btn__glitch">REGISTER NOW !</span>
+									<span aria-hidden class="cybr-btn__tag">SOON</span>
+								  </button>
+							</div>
+							
+
+						</div><a href="https://neoh-react.vercel.app/?storefront=envato-elements#about"
+							class="neoh_fn_down magic-hover magic-hover__square"><span class="text">Scroll
+								Down</span><span class="icon"><svg version="1.1" id="null"
+									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px" y="0px" viewBox="0 0 492.004 492.004"
+									style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve"
+									class="fn__svg replaced-svg">
+									<g>
+										<g>
+											<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+			c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+			c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+			c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"></path>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg></span></a>
+					</div>
+				</div>
+
+				<section id="about">
+					<div class="container">
+						<div class="neoh_fn_about_item" style="margin-top: -5rem;">
+							<div class="img_item"><img src="kernel_files/st.jpg" alt=""></div>
+							<div class="content_item">
+								<div class="neoh_fn_title" data-align="left">
+									<h3 class="fn_title">Greetings</h3>
+									<div class="line"><span></span></div>
+								</div>
+								<div class="desc">
+									<p style="font-size: 20px;"><b>Hearty Salutations...</b></p>
+									<p>Guess what? St.Joseph’s College of Engineering is hosting a national level technical symposium Kernel 2023 with a plethora of events with flashy prize amounts….</p>
+									<!-- <p>Prizes to be won! Here's what you need to know:</p> -->
+									
+								</div>
+													
+
+			
+							
+							
+							</div>
+						</div>
+						
+						<div class="neoh_fn_about_item reverse" style="margin-top: -10rem;">
+							
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3889.593076093631!2d80.2145989!3d12.8695387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525bbeb0b2eeb7%3A0x2cb8fc0ae9b16ed5!2sSt%20Joseph&#39;s%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1688213704026!5m2!1sen!2sin" width="650" height="450" style="border:0;border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<div class="content_item">
+								<div class="neoh_fn_title" data-align="left">
+									<h3 class="fn_title">To know About</h3>
+									<div class="line"><span></span></div>
+								</div>
+								<div class="desc">
+									<p style="font-size: 20px;"><b>When?</b></p>
+									<p>August 2nd and August 5th, 9:00 AM</p>
+									<p style="font-size: 20px;"><b>Where?</b></p>
+									<p>St. Joseph’s College of Engineering, Chennai  <div class="buttons"><a class="neoh_fn_button only_text"
+										href="https://goo.gl/maps/FMhJ3gQbQMAA2hcFA"><span class="text">View
+											US</span></a></div>
+							</div></p>
+									<p style="font-size: 20px;"><b>How?</b></p>
+									<p>Offline mode</p>
+									<p style="font-size: 20px;"><b>Why?</b></p>
+									<p>To learn, share, compete and much more</p>
+								</div>
+								<!-- <div class="buttons"><a class="neoh_fn_button only_text"
+										href="https://neoh-react.vercel.app/about"><span class="text">More About
+											US</span></a></div>
+							</div> -->
+						</div>
+					</div>
+				</section>
+				<section id="drop">
+					<div class="container" style="margin-top: -15rem;">
+						<div class="neoh_fn_title">
+							<h3 class="fn_title">DEPARTMENTS</h3>
+							<div class="line"><span></span></div><br>
+							<p class="fn_title" style="font-size: 20px;">Across the walls of the college, there are events in various departments.</p>
+						</div>
+						<div class="neoh_fn_drops">
+							<ul>
+								<li>
+									<div class="item" data-modal-image="img/drops/1.jpg" data-modal-title="Neoh #4588"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/1(1).jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4588</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/2.jpg" data-modal-title="Neoh #4587"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="" data-modal-discord-url="#">
+										<div class="img_holder"><img src="./kernel_files/2(1).jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4587</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/3.jpg" data-modal-title="Neoh #4586"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/3.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4586</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/4.jpg" data-modal-title="Neoh #4585"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/4.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4585</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/5.jpg" data-modal-title="Neoh #4584"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/5.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4584</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/6.jpg" data-modal-title="Neoh #4583"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/6.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4583</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/4.jpg" data-modal-title="Neoh #4585"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/4.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4585</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/5.jpg" data-modal-title="Neoh #4584"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/5.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4584</a></h3>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item" data-modal-image="img/drops/6.jpg" data-modal-title="Neoh #4583"
+										data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+										data-modal-opensea-url="#" data-modal-discord-url="">
+										<div class="img_holder"><img src="./kernel_files/6.jpg" alt=""><a
+												class="full_link"></a></div>
+										<div class="title_holder">
+											<h3 class="fn_title"><a>Neoh #4583</a></h3>
+										</div>
+									</div>
+								</li>
+								<div class="container" style="max-width: 100;">
+									<div class="row">
+										<li>
+											<div class="item" data-modal-image="img/drops/1.jpg" data-modal-title="Neoh #4588"
+												data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+												data-modal-opensea-url="#" data-modal-discord-url="">
+												<div class="img_holder"><img src="./kernel_files/1(1).jpg" alt=""><a
+														class="full_link"></a></div>
+												<div class="title_holder">
+													<h3 class="fn_title"><a>Neoh #4588</a></h3>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item" data-modal-image="img/drops/2.jpg" data-modal-title="Neoh #4587"
+												data-modal-description="Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia."
+												data-modal-opensea-url="" data-modal-discord-url="#">
+												<div class="img_holder"><img src="./kernel_files/2(1).jpg" alt=""><a
+														class="full_link"></a></div>
+												<div class="title_holder">
+													<h3 class="fn_title"><a>Neoh #4587</a></h3>
+												</div>
+											</div>
+										</li>
+									</div>
+								</div>
+								
+								
+							</ul>
+							<!-- <div class="clearfix"></div><a class="neoh_fn_button only_text full"
+								href="https://neoh-react.vercel.app/collection"><span class="text">Click here to See all
+									ITEMS</span></a>
+						</div> -->
+						<!-- <div class="neoh_fn_title">
+							<h3 class="fn_title">Neoh’s Roadmap</h3>
+							<div class="line"><span></span></div>
+						</div>
+						<div class="neoh_fn_timeline">
+							<div class="timeline_content">
+								<ul class="timeline_list">
+									<li class="timeline_item previous" data-index="1">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(2).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(2).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(1).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>May 05, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">New
+														Character Set #12 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item active" data-index="2">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(3).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(3).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(2).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>May 27, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">Female
+														Character Set #20 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item next" data-index="3">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(4).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(4).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(3).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>June 01, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">Mini Game
+														Lounch For Community</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item next" data-index="4">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(5).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(5).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(4).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>June 07, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">New
+														Character Set #15 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item next" data-index="5">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(6).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(6).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(5).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>June 15, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">New Spirit
+														Set #01 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item next" data-index="6">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(7).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(7).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(6).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>June 23, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">New Haircut
+														Collection #01 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline_item next" data-index="7">
+										<div class="t_item">
+											<div class="t_item_img">
+												<div class="neoh_fn_gallery_1_2">
+													<div class="gallery_in">
+														<div class="item row2"><img
+																src="./kernel_files/1(8).jpg" alt=""></div>
+														<div class="item"><img src="./kernel_files/2(8).jpg"
+																alt=""></div>
+														<div class="item"><img src="./kernel_files/3(7).jpg"
+																alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="t_item_info">
+												<p class="fn_date"><span>July 01, 2022</span></p>
+												<h3 class="fn_title"><a
+														href="https://neoh-react.vercel.app/roadmap-single">New Haircut
+														Collection #02 is Coming Up</a></h3>
+												<p class="fn_desc">Morbi non dignissim erat, a blandit felis.
+													Suspendisse nec lorem vel orci varius congue ut vitae est. Nam quis
+													tempus nisl. Fusce posuere nibh a mi molestie, sit amet ornare
+													lectus interdum.</p>
+												<p class="fn_read"><a class="neoh_fn_button only_text"
+														href="https://neoh-react.vercel.app/roadmap-single"><span
+															class="text">Read More</span></a></p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="timeline_progress"><a class="nav_prev c-pointer"><svg version="1.1" id="null"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px" y="0px" viewBox="0 0 492.004 492.004"
+										style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve"
+										class="fn__svg replaced-svg">
+										<g>
+											<g>
+												<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+			c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+			c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+			c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"></path>
+											</g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+									</svg></a><a class="nav_next c-pointer"><svg version="1.1" id="null"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px" y="0px" viewBox="0 0 492.004 492.004"
+										style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve"
+										class="fn__svg replaced-svg">
+										<g>
+											<g>
+												<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+			c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+			c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+			c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"></path>
+											</g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+									</svg></a>
+								<div class="progress_line_wrapper">
+									<div class="progress_line" style="width: 1645.66px; transform: translateX(0%);">
+										<ul>
+											<li class="previous"><a><span class="text">May 05, 2022</span><span
+														class="circle" style="filter: brightness(50%);"></span></a></li>
+											<li class="active"><a><span class="text">May 27, 2022</span><span
+														class="circle" style="filter: brightness(100%);"></span></a>
+											</li>
+											<li class="next"><a><span class="text">June 01, 2022</span><span
+														class="circle" style="filter: brightness(150%);"></span></a>
+											</li>
+											<li class="next"><a><span class="text">June 07, 2022</span><span
+														class="circle" style="filter: brightness(200%);"></span></a>
+											</li>
+											<li class="next"><a><span class="text">June 15, 2022</span><span
+														class="circle" style="filter: brightness(250%);"></span></a>
+											</li>
+											<li class="next"><a><span class="text">June 23, 2022</span><span
+														class="circle" style="filter: brightness(300%);"></span></a>
+											</li>
+											<li class="next"><a><span class="text">July 01, 2022</span><span
+														class="circle" style="filter: brightness(350%);"></span></a>
+											</li>
+										</ul><span class="active_line"></span>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</section>
+				
+				<section id="services"><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 59"
+						style="enable-background:new 0 0 1920 59;" xml:space="preserve"
+						class="fn__svg fn__divider top_divider replaced-svg">
+						<polygon points="1920,0 1920,8 1064,28 1040,42 1001,32 960,59 919,32 880,42 856,28 0,8 0,0 ">
+						</polygon>
+					</svg><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 59"
+						style="enable-background:new 0 0 1920 59;" xml:space="preserve"
+						class="fn__svg fn__divider bottom_divider replaced-svg">
+						<polygon points="1920,0 1920,8 1064,28 1040,42 1001,32 960,59 919,32 880,42 856,28 0,8 0,0 ">
+						</polygon>
+					</svg>
+					<div class="container" >
+						<div class="neoh_fn_title">
+							<h3 class="fn_title">Rules to Follow</h3>
+							<div class="line"><span></span></div>
+						</div>
+						<div class="neoh_fn_services">
+							<ul>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>01</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Confirmation Email</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Students </span><span
+													style="animation-delay: 0.04s;">have </span><span
+													style="animation-delay: 0.08s;">to </span><span
+													style="animation-delay: 0.12s;">register </span><span
+													style="animation-delay: 0.16s;">only </span><span
+													style="animation-delay: 0.2s;">online </span><span
+													style="animation-delay: 0.24s;">and </span><span
+													style="animation-delay: 0.28s;">confirmation </span><span
+													style="animation-delay: 0.32s;">mail </span><span
+													style="animation-delay: 0.36s;">will </span><span
+													style="animation-delay: 0.4s;">be </span><span
+													style="animation-delay: 0.44s;">sent </span><span
+													style="animation-delay: 0.48s;">to </span><span
+													style="animation-delay: 0.52s;">the </span><span
+													style="animation-delay: 0.56s;">participants.</span>
+													</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>02</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Transportation</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Transport </span><span
+													style="animation-delay: 0.04s;">is </span><span
+													style="animation-delay: 0.08s;">available </span><span
+													style="animation-delay: 0.12s;">from </span><span
+													style="animation-delay: 0.16s;">all </span><span
+													style="animation-delay: 0.2s;">parts </span><span
+													style="animation-delay: 0.24s;">of </span><span
+													style="animation-delay: 0.28s;">the </span><span
+													style="animation-delay: 0.32s;">city </span><span
+													style="animation-delay: 0.36s;">by </span><span
+													style="animation-delay: 0.4s;">our </span><span
+													style="animation-delay: 0.44s;">college </span><span
+													style="animation-delay: 0.48s;">bus.</span></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>03</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">College ID</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">All</span><span
+													style="animation-delay: 0.04s;">participants </span><span
+													style="animation-delay: 0.08s;">should </span><span
+													style="animation-delay: 0.12s;">bring </span><span
+													style="animation-delay: 0.16s;">their </span><span
+													style="animation-delay: 0.2s;">college </span><span
+													style="animation-delay: 0.24s;">id </span><span
+													style="animation-delay: 0.28s;">cards.</span>
+													</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>04</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Dress Code</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Participants </span><span
+													style="animation-delay: 0.04s;">are </span><span
+													style="animation-delay: 0.08s;">permitted </span><span
+													style="animation-delay: 0.12s;">to </span><span
+													style="animation-delay: 0.16s;">enter </span><span
+													style="animation-delay: 0.2s;">the </span><span
+													style="animation-delay: 0.24s;">campus </span><span
+													style="animation-delay: 0.28s;">only </span><span
+													style="animation-delay: 0.32s;">with </span><span
+													style="animation-delay: 0.36s;">the </span><span
+													style="animation-delay: 0.4s;">Formal </span><span
+													style="animation-delay: 0.44s;">Dress </span><span
+													style="animation-delay: 0.48s;">Code.</span></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>05</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Entry</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Participants </span><span
+													style="animation-delay: 0.04s;">will </span><span
+													style="animation-delay: 0.08s;">be </span><span
+													style="animation-delay: 0.12s;">allowed </span><span
+													style="animation-delay: 0.16s;">to </span><span
+													style="animation-delay: 0.2s;">enter </span><span
+													style="animation-delay: 0.24s;">with </span><span
+													style="animation-delay: 0.28s;">a </span><span
+													style="animation-delay: 0.32s;">confirmation </span><span
+													style="animation-delay: 0.36s;">printout </span><span
+													style="animation-delay: 0.4s;">upto </span><span
+													style="animation-delay: 0.44s;">9.00 </span><span
+													style="animation-delay: 0.48s;">A.M. </span>
+													</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>06</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Food</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Breakfast </span><span
+													style="animation-delay: 0.04s;">and </span><span
+													style="animation-delay: 0.08s;">lunch </span><span
+													style="animation-delay: 0.12s;">will </span><span
+													style="animation-delay: 0.16s;">be </span><span
+													style="animation-delay: 0.2s;">provided </span><span
+													style="animation-delay: 0.24s;">by </span><span
+													style="animation-delay: 0.28s;">our </span><span
+													style="animation-delay: 0.32s;">college.</span></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>07</span></div>
+										<div class="item_content">
+											<h3 class="fn_title"></h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">No </span><span
+													style="animation-delay: 0.04s;">TA/DA </span><span
+													style="animation-delay: 0.08s;">will </span><span
+													style="animation-delay: 0.12s;">be </span><span
+													style="animation-delay: 0.16s;">provided.</span>
+													</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="item_num"><span>08</span></div>
+										<div class="item_content">
+											<h3 class="fn_title">Dress Code</h3>
+											<p class="fn_desc fn_animated_text ready stop"><span
+													style="animation-delay: 0s;">Participants </span><span
+													style="animation-delay: 0.04s;">are </span><span
+													style="animation-delay: 0.08s;">permitted </span><span
+													style="animation-delay: 0.12s;">to </span><span
+													style="animation-delay: 0.16s;">enter </span><span
+													style="animation-delay: 0.2s;">the </span><span
+													style="animation-delay: 0.24s;">campus </span><span
+													style="animation-delay: 0.28s;">only </span><span
+													style="animation-delay: 0.32s;">with </span><span
+													style="animation-delay: 0.36s;">the </span><span
+													style="animation-delay: 0.4s;">Formal </span><span
+													style="animation-delay: 0.44s;">Dress </span><span
+													style="animation-delay: 0.48s;">Code.</span></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				</section>
+				<!-- <div class="neoh_fn_modal product_modal ">
+					<div class="modal_in">
+						<div class="modal_closer"><a><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 341.751 341.751" style="enable-background:new 0 0 341.751 341.751;"
+									xml:space="preserve" class="fn__svg replaced-svg">
+									<g>
+										<g>
+
+											<rect x="-49.415" y="149.542"
+												transform="matrix(0.7072 -0.707 0.707 0.7072 -70.7868 170.8326)"
+												width="440.528" height="42.667"></rect>
+										</g>
+									</g>
+									<g>
+										<g>
+
+											<rect x="149.569" y="-49.388"
+												transform="matrix(0.707 -0.7072 0.7072 0.707 -70.7712 170.919)"
+												width="42.667" height="440.528"></rect>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg></a></div>
+						<div class="modal_content">
+							<div class="neoh_fn_product_modal">
+								<div class="img_item"><img
+										src="https://neoh-react.vercel.app/?storefront=envato-elements"></div>
+								<div class="content_item">
+									<div class="neoh_fn_title" data-align="left">
+										<h3 class="fn_title"></h3>
+										<div class="line"><span></span></div>
+									</div>
+									<div class="desc">
+										<p>Suspendisse eu velit est. Cras nec vestibulum quam. Donec
+											tincidunt purus nec enim tincidunt, sit amet facilisis massa
+											laoreet. Integer mollis nec sapien eu lacinia.</p>
+									</div>
+									<div class="buttons"><a href="https://opensea.io/" target="_blank" rel="noreferrer"
+											class="neoh_fn_button opensea"><span class="icon"><svg version="1.0"
+													xmlns="http://www.w3.org/2000/svg" width="223.000000pt"
+													height="200.000000pt" viewBox="0 0 223.000000 200.000000"
+													preserveAspectRatio="xMidYMid meet" id="null"
+													class="fn__svg replaced-svg">
+
+													<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+														stroke="none">
+														<path d="M1058 1985 c-40 -22 -48 -45 -48 -129 0 -42 -3 -76 -8 -76 -4 0 -65
+16 -136 35 -71 20 -131 34 -133 31 -2 -2 14 -40 36 -85 142 -282 206 -551 170
+-723 -13 -65 -90 -228 -153 -327 -26 -40 -45 -79 -42 -87 4 -11 34 -14 136
+-14 l130 0 0 -100 0 -100 -152 0 c-134 0 -157 2 -196 21 -56 27 -93 84 -100
+149 l-5 50 -275 0 -275 0 6 -78 c7 -85 37 -181 82 -258 44 -75 150 -174 231
+-217 140 -73 135 -72 739 -72 534 0 541 0 587 22 69 31 141 104 212 213 35 52
+84 127 110 167 37 56 62 82 116 118 37 25 82 50 99 56 31 11 31 11 31 86 0 66
+-2 74 -17 69 -10 -3 -137 -39 -283 -81 l-265 -77 -70 -68 c-92 -91 -116 -100
+-260 -100 l-115 0 0 100 0 100 74 0 c85 0 102 10 200 120 75 84 110 135 149
+218 28 58 32 77 31 147 -1 97 -23 160 -96 272 -52 81 -266 303 -326 338 l-32
+19 0 88 c0 90 -13 142 -43 166 -24 20 -79 24 -109 7z"></path>
+														<path d="M586 1558 c-18 -29 -126 -198 -240 -376 -113 -178 -206 -328 -206
+-333 0 -5 103 -9 254 -9 l254 0 52 105 c61 121 72 195 50 319 -21 118 -101
+346 -121 346 -5 0 -24 -24 -43 -52z"></path>
+													</g>
+												</svg></span><span class="text">View on OpenSea</span></a><a
+											href="https://discord.com/" target="_blank" rel="noreferrer"
+											class="neoh_fn_button discord disable"><span class="icon"><svg version="1.0"
+													xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+													height="392.000000pt" viewBox="0 0 512.000000 392.000000"
+													preserveAspectRatio="xMidYMid meet" id="null"
+													class="fn__svg replaced-svg">
+
+													<g transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)"
+														stroke="none">
+														<path d="M1690 3885 c-317 -70 -559 -148 -858 -275 -49 -21 -57 -30 -126 -139
+-330 -522 -544 -1059 -641 -1610 -50 -287 -59 -412 -58 -766 1 -181 5 -355 10
+-385 l8 -54 130 -89 c325 -221 663 -391 1017 -512 73 -25 138 -43 144 -41 25
+10 274 407 274 437 0 4 -26 17 -57 29 -79 31 -335 158 -352 175 -17 17 -13 23
+41 62 l43 31 100 -43 c528 -225 1131 -298 1690 -204 257 43 491 114 766 232
+35 15 36 15 80 -20 24 -19 44 -40 44 -46 0 -14 -209 -124 -320 -168 -44 -18
+-84 -36 -89 -40 -20 -18 239 -448 270 -449 7 0 65 18 130 41 369 127 702 294
+1029 516 l130 89 7 54 c3 30 9 159 13 285 28 882 -200 1686 -702 2477 l-74
+116 -137 57 c-253 105 -583 205 -826 250 l-90 17 -17 -24 c-10 -12 -42 -74
+-71 -137 l-53 -113 -50 6 c-27 3 -93 11 -145 18 -124 16 -645 16 -775 0 -55
+-6 -122 -14 -150 -18 l-50 -5 -65 133 c-76 155 -63 148 -220 113z m204 -1649
+c131 -64 226 -189 262 -343 20 -84 14 -223 -14 -304 -115 -344 -492 -448 -737
+-204 -160 160 -199 419 -95 632 57 115 150 199 269 240 55 20 80 23 154 20 76
+-4 98 -9 161 -41z m1702 -1 c171 -84 274 -259 274 -465 0 -150 -47 -274 -142
+-375 -260 -279 -680 -133 -764 265 -44 209 47 442 216 550 82 53 151 71 253
+66 77 -3 98 -8 163 -41z"></path>
+													</g>
+												</svg></span><span class="text">View on Discord</span></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				
+				<!-- <section id="investor"><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 59"
+						style="enable-background:new 0 0 1920 59;" xml:space="preserve"
+						class="fn__svg fn__divider top_divider replaced-svg">
+						<polygon points="1920,0 1920,8 1064,28 1040,42 1001,32 960,59 919,32 880,42 856,28 0,8 0,0 ">
+						</polygon>
+					</svg><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 59"
+						style="enable-background:new 0 0 1920 59;" xml:space="preserve"
+						class="fn__svg fn__divider bottom_divider replaced-svg">
+						<polygon points="1920,0 1920,8 1064,28 1040,42 1001,32 960,59 919,32 880,42 856,28 0,8 0,0 ">
+						</polygon>
+					</svg>
+					<div class="container">
+						<div class="neoh_fn_title">
+							<h3 class="fn_title">Neohs Investors</h3>
+							<div class="line"><span></span></div>
+						</div>
+						<div class="neoh_fn_investor">
+							<ul>
+								<li>
+									<div class="item"><img src="./kernel_files/1.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/2.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/3.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/4.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/5.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/6.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/7.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/8.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/9.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/10.png" alt=""><a
+											href="https://neoh-react.vercel.app/?storefront=envato-elements#"
+											class="full_link"></a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+				<!-- <section id="blog">
+					<div class="container">
+						<div class="neoh_fn_title">
+							<h3 class="fn_title">Neohs News</h3>
+							<div class="line"><span></span></div>
+						</div>
+						<div class="neoh_fn_moving_blog">
+							<ul>
+								<li>
+									<div class="item"><img src="./kernel_files/1(9).jpg" alt=""
+											class="moving_img">
+										<p class="fn_date"><span>June 01, 2022</span></p>
+										<h3 class="fn_title"><a href="https://neoh-react.vercel.app/blog-single">Neohs
+												NFT Goes Public In Nod To Crypto Adoption</a></h3>
+										<p class="fn_desc">Morbi non dignissim erat, a blandit felis nec lorem vel orci
+											varius congue ut vitae est.</p>
+										<p class="fn_read"><a class="neoh_fn_button only_text"
+												href="https://neoh-react.vercel.app/blog-single"><span class="text">Read
+													More</span></a></p>
+									</div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/2(9).jpg" alt=""
+											class="moving_img">
+										<p class="fn_date"><span>May 25, 2022</span></p>
+										<h3 class="fn_title"><a
+												href="https://neoh-react.vercel.app/blog-single">Bankman-Fried Would
+												Like to Talk With Musk About Twitter</a></h3>
+										<p class="fn_desc">Morbi non dignissim erat, a blandit felis nec lorem vel orci
+											varius congue ut vitae est.</p>
+										<p class="fn_read"><a class="neoh_fn_button only_text"
+												href="https://neoh-react.vercel.app/blog-single"><span class="text">Read
+													More</span></a></p>
+									</div>
+								</li>
+								<li>
+									<div class="item"><img src="./kernel_files/3(8).jpg" alt=""
+											class="moving_img">
+										<p class="fn_date"><span>May 13, 2022</span></p>
+										<h3 class="fn_title"><a
+												href="https://neoh-react.vercel.app/blog-single">Crypto-Focused
+												Silvergate Jumps on Blowout Earnings Report</a></h3>
+										<p class="fn_desc">Morbi non dignissim erat, a blandit felis nec lorem vel orci
+											varius congue ut vitae est.</p>
+										<p class="fn_read"><a class="neoh_fn_button only_text"
+												href="https://neoh-react.vercel.app/blog-single"><span class="text">Read
+													More</span></a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+			</div>
+			<footer id="footer">
+				<div class="neoh_fn_footer">
+					<div class="footer_top">
+						<div class="container">
+							<div class="ft_in">
+								<div class="desc">
+									<div class="img"><img src="kernel_files/logo.png" alt=""></div>
+									<h3 class="fn_title"style="font-size: 50px;">Contact Us</h3><br>
+									<h3 class="fn_title"style="font-size: 20px;">Address :</h3>
+									<p class="fn_desc">Jeppiaar Nagar, Old Mahabalipuram Road, Semmancherry,
+										Sholinganallur, Chennai, Tamil Nadu. PIN-600119</p>
+
+									<h3 class="fn_title"style="font-size: 20px;">Call Us :</h3>
+									<p class="fn_desc">044-24501060 / 044-24501449</p>
+
+									<h3 class="fn_title"style="font-size: 20px;">Co-ordinators :</h3>
+									<p class="fn_desc">L.Vinith Louis Raju - +91 9629649684</p>
+									<p class="fn_desc">P.Shevanie Shupreeya - +91 9952325628</p>
+									<p class="fn_desc">R.Jaggajit Vasishta - +91 94877722930</p>
+									
+
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="footer_bottom">
+						<div class="container">
+							<div class="fb_in">
+								<div class="fb_left">
+									<p>Copyright © SJCE | All Rights Reserved</p>
+								</div>
+								<div class="fb_right">
+									<ul>
+										<li><a href="#drop">Departments</a></li>
+										<li><a
+												href="#services">Rules to Follow</a>
+										</li>
+										<li><a href="#footer">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer><a href="https://neoh-react.vercel.app/?storefront=envato-elements#" class="neoh_fn_totop"><span
+					class="arrow"><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492.004 492.004"
+						style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve"
+						class="fn__svg replaced-svg">
+						<g>
+							<g>
+								<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+			c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+			c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+			c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"></path>
+							</g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+					</svg></span><span class="circle"><svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"
+						viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
+						class="fn__svg replaced-svg">
+						<path class="stroke-solid" fill="none" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5" style="stroke-dashoffset: 300;"></path>
+					</svg></span></a>
+		</div>
+		<div class="neoh_fn_moving_box"></div>
+	</div>
+	<script id="__NEXT_DATA__" type="application/json">
+		{
+			"props": {
+				"pageProps": {}
+			},
+			"page": "/",
+			"query": {},
+			"buildId": "6IpxVhpml6viwTbdtan4s",
+			"nextExport": true,
+			"autoExport": true,
+			"isFallback": false,
+			"scriptLoader": []
+		}
+	</script>
+	<next-route-announcer>
+		<p aria-live="assertive" id="__next-route-announcer__" role="alert"
+			style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
+		</p>
+	</next-route-announcer>
+	<script src="./kernel_files/collection-ca14912a6bcabe92.js.download"></script>
+	<script src="./kernel_files/blog-b2c862c03618225f.js.download"></script>
+	<script src="./kernel_files/about-542c2ac18fc621c2.js.download"></script>
+	<script src="./kernel_files/contact-f99cf35f3d0f0d80.js.download"></script>
+	<script src="./kernel_files/roadmap-single-7154eb3aa04a908c.js.download"></script>
+	<script src="./kernel_files/blog-single-5dc63feebde08341.js.download"></script>
+	<script src="./kernel_files/roadmap-bf716beb6051aa11.js.download"></script>
+</body>
+
+</html>
